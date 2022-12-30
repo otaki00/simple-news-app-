@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.item{
+    position: relative;
+    
+}
+
+img{
+    width: 300px;
+    height: 500px;
+}
+
+.caption{
+    position: absolute;
+    top: 450px;
+    left: 10px;
+}
+
+.caption h1{
+    color: #fff;
+    font-size: 22px;
+}
+
+#fixed-box{
+    position: fixed;
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#small-box{
+    width: 40%;
+    height: 80%;
+    background-image: url(/images/hunter.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+i{
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 900;
+    color: #131313;
+    transition: all .5s ease-in;
+}
